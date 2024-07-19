@@ -10,7 +10,7 @@
 
 @layer utilities {
     .btn_white {
-        @apply border-white bg-white px-8 py-3 text-green-50;
+        @apply border-none bg-white px-8 py-3 text-red-900 hover:bg-red-100;
     }
     .btn_white_text {
         @apply border-white bg-white px-8 py-3 text-gray-90;
@@ -23,6 +23,9 @@
     }
     .btn_dark_green_outline {
         @apply border-gray-20 bg-green-90 px-8 py-5 text-white;
+    }
+    .btn_dark_red {
+        @apply bg-red-900 border-none px-8 py-4 text-white transition-all hover:bg-red-700;
     }
 
     .max-container {
