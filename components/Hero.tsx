@@ -5,13 +5,13 @@ import Button from "./Button";
 const Hero = () => {
     return (
         <div className="flex justify-center">
-            <div className="relative flex max-h-screen max-w-[1440px] items-center bg-black">
+            <div className="relative flex max-w-[1440px] max-h-screen items-center bg-black">
                 <Image
                     src="/background-buahsayur.jpg"
                     width={1920}
                     height={1080}
                     alt="Hero Image"
-                    className="opacity-50 object-cover object-center"
+                    className="opacity-50 max-h-screen object-cover object-center"
                 />
                 <div className="flex flex-col absolute top-[20%] left-[10%] items-start">
                     <h1 className="md:text-6xl sm:text-4xl text-xl font-bold text-white max-w-xs sm:max-w-sm md:max-w-xl">

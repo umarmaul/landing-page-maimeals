@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="flex items-center mx-auto max-w-[1440px] relative z-50 justify-between px-6 py-4 lg:px-20">
+            <nav className="flex items-center mx-auto max-w-[1440px] sticky top-0 z-50 justify-between px-6 py-4 lg:px-20 bg-inherit">
                 <Link href="/">
                     <Image
                         src="/logo.svg"
@@ -78,7 +78,7 @@ const Navbar = () => {
                 </button>
             </nav>
             {isOpen && (
-                <div className="md:hidden fixed top-20 left-0 w-full h-full bg-white z-40">
+                <div className="md:hidden top-20 left-0 w-full h-full bg-white z-50 sticky">
                     <div className="flex flex-col items-center justify-center min-h-[40vh] gap-y-10 z-50 py-6">
                         <ul className="flex flex-col text-center text-red-900 gap-y-10">
                             {NAV_LINKS.map((link) => (
